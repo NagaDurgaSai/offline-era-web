@@ -45,7 +45,7 @@ export default function Home() {
       <style>{`
         @media (max-width: 768px) {
           .hero-grid { grid-template-columns: 1fr !important; }
-          .hero-anim { display: none !important; }
+          .hero-anim { display: none !important; } @media (min-width: 769px) { .hero-anim { display: flex !important; } }
           .features-grid { grid-template-columns: 1fr 1fr !important; }
           .features-card { border-right: none !important; border-bottom: 1px solid var(--border); }
           .how-grid { grid-template-columns: 1fr !important; gap: 48px !important; }
