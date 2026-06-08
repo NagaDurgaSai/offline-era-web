@@ -202,12 +202,12 @@ export default function Home() {
         <div className="mockup-grid" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2, background: 'var(--border)' }}>
           <ScrollReveal delay={0}>
             <div style={{ background: 'var(--bg)', padding: 2 }}>
-              <Image src="/home.png" alt="Offline Era home screen" width={1232} height={976} style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }} />
+              <Image src="/offline-era-web/home.png" alt="Offline Era home screen" width={1232} height={976} style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }} />
             </div>
           </ScrollReveal>
           <ScrollReveal delay={100}>
             <div style={{ background: 'var(--bg)', padding: 2 }}>
-              <Image src="/profile.png" alt="Offline Era profile screen" width={1232} height={976} style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }} />
+              <Image src="/offline-era-web/profile.png" alt="Offline Era profile screen" width={1232} height={976} style={{ width: '100%', height: 'auto', display: 'block', borderRadius: 2 }} />
             </div>
           </ScrollReveal>
         </div>
