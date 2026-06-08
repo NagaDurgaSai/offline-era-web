@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Offline Era</title>
+  <style>
+    @font-face {
+      font-family: 'Styrene A';
+      src: url('/offline-era-web/fonts/StyreneA-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Styrene A';
+      src: url('/offline-era-web/fonts/StyreneA-Medium.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+    }
+    @font-face {
+      font-family: 'Styrene A';
+      src: url('/offline-era-web/fonts/StyreneA-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: #0A0A0A;
+      color: #F5F5F0;
+      font-family: 'Styrene A', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .code {
+      font-size: clamp(6rem, 20vw, 10rem);
+      font-weight: 700;
+      line-height: 1;
+      color: #B8FF57;
+      letter-spacing: -0.04em;
+    }
+
+    .label {
+      margin-top: 1rem;
+      font-size: clamp(1rem, 3vw, 1.25rem);
+      font-weight: 400;
+      color: rgba(245, 245, 240, 0.5);
+      letter-spacing: 0.02em;
+    }
+
+    .message {
+      margin-top: 0.5rem;
+      font-size: clamp(0.875rem, 2vw, 1rem);
+      color: rgba(245, 245, 240, 0.3);
+      max-width: 360px;
+      line-height: 1.6;
+    }
+
+    .back {
+      margin-top: 2.5rem;
+      display: inline-block;
+      padding: 0.75rem 1.75rem;
+      border: 1px solid rgba(245, 245, 240, 0.15);
+      border-radius: 2rem;
+      color: #F5F5F0;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-family: inherit;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .back:hover {
+      border-color: #B8FF57;
+      color: #B8FF57;
+    }
+
+    .dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #B8FF57;
+      margin-bottom: 1.5rem;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.8); }
+    }
+  </style>
+</head>
+<body>
+  <div class="dot"></div>
+  <div class="code">404</div>
+  <div class="label">Page not found</div>
+  <p class="message">This node doesn't exist on the network. Check the URL or head back home.</p>
+  <a class="back" href="/offline-era-web/">Go home</a>
+</body>
+</html>

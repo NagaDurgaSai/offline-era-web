@@ -3,7 +3,8 @@ const nextConfig = {
   allowedDevOrigins: ['192.168.0.177'],
   output: 'export',
   images: { unoptimized: true },
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  basePath: '/offline-era-web',
+  assetPrefix: '/offline-era-web',
   trailingSlash: true,
 }
 
