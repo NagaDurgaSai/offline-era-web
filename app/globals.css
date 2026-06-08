@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'StyreneA';
+  src: url('/fonts/StyreneA-Regular-Trial-BF63f6cbd970ee9.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'StyreneA';
+  src: url('/fonts/StyreneA-Medium-Trial-BF63f6cbdb24b6d.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'StyreneA';
+  src: url('/fonts/StyreneA-Bold-Trial-BF63f6cbda1877f.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'StyreneA';
+  src: url('/fonts/StyreneA-Light-Trial-BF63f6cbd99dc3e.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg: #0A0A0A;
+  --fg: #F5F5F0;
+  --fg-muted: #666660;
+  --fg-dim: #333330;
+  --accent: #B8FF57;
+  --border: rgba(255,255,255,0.08);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--bg);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'StyreneA', sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--accent);
+  color: #000;
 }
