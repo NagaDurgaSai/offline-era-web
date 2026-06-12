@@ -26,9 +26,9 @@ const BUILT_FOR = [
 ]
 
 const PLATFORMS = [
-  { name: 'macOS', sub: 'Apple Silicon + Intel', label: 'Download .dmg', href: 'https://github.com/NagaDurgaSai/offline_era/releases/latest', available: true },
-  { name: 'Windows', sub: 'Windows 10 / 11', label: 'Download .exe', href: 'https://github.com/NagaDurgaSai/offline_era/releases/latest', available: true },
-  { name: 'Android', sub: 'Android 8+', label: 'Download .apk', href: 'https://github.com/NagaDurgaSai/offline_era/releases/latest', available: true },
+  { name: 'macOS', sub: 'Apple Silicon + Intel', label: 'Download .dmg', href: 'https://github.com/NagaDurgaSai/offline_era/releases/latest/download/offline-era-macos.dmg', available: true },
+  { name: 'Windows', sub: 'Windows 10 / 11', label: 'Download .zip', href: 'https://github.com/NagaDurgaSai/offline_era/releases/latest/download/offline-era-windows.zip', available: true },
+  { name: 'Android', sub: 'Android 8+', label: 'Download .apk', href: 'https://github.com/NagaDurgaSai/offline_era/releases/latest/download/offline-era-android.apk', available: true },
   { name: 'iOS / iPadOS', sub: 'iOS 16+', label: 'Under testing', href: null, available: false },
 ]
 
